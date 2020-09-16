@@ -42,8 +42,8 @@ time an actor fails, even if the message is going to be retried.
    if __name__ == "__main__":
        identity.send_with_options(
            args=(42,)
-           on_failure=print_error,
-           on_success=print_result,
+           on_failure='print_error',
+           on_success='print_result',
        )
 
 
